@@ -1,0 +1,148 @@
+body{
+    background-color: #333;
+    color: #ccc;
+    background: linear-gradient(45deg, #333, #555) no-repeat right top fixed;
+    font-family: 'Lucida Console' monospace;
+}
+
+header{
+    background-color: hsl(208 100% 22%);
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+}
+
+#page-name{
+    left: 20px;
+    padding: 5px;
+    cursor: default;
+}
+
+#nav{
+    position: fixed;
+    top:5px;
+    right: 20px;
+}
+
+#nav a{
+    color:#ccc;
+    padding: 5px;
+    text-decoration: none
+}
+
+#nav a:hover{
+    color: #333;
+
+}
+
+#main{
+    margin: 50px;
+    text-align: center;
+}
+
+input, select, textarea{
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+
+
+
+.box{
+    border: double 1px #777;
+    display: inline;
+    margin: 5px;
+    padding: 5px;
+}
+
+/*
+#rad{
+    display: grid;
+    grid-template: repeat(3, 1fr)/repeat(3, 1fr);
+    grid-template-areas:
+        "rad-label rad-label rad-label" 
+        "y-label w-label n-label"
+        "rad-y rad-w rad-n";
+}
+
+#rad-label{
+    grid-area: rad-label;
+}
+
+#y-label{
+    grid-area: y-label;
+}
+
+#w-label{
+    grid-area: w-label;
+}
+
+#n-label{
+    grid-area: n-label;
+}
+
+#rad-y{
+    grid-area: rad-n;
+}
+
+#rad-w{
+    grid-area: rad-w;
+}
+
+#rad-n{
+    grid-area: rad-n;
+}
+
+
+
+#check{
+    display: grid;
+    grid-template: repeat(3, 1fr)/repeat(3, 1fr);
+    grid-template-areas:
+        "check-label check-label check-label" 
+        "all-label none-label form-label"
+        "check-all check-none check-form";
+}
+
+#check-label{
+    grid-area: check-label;
+}
+
+#all-label{
+    grid-area: all-label;
+}
+
+#none-label{
+    grid-area: none-label;
+}
+
+#form-label{
+    grid-area: form-label;
+}
+
+#check-all{
+    grid-area: check-all;
+}
+
+#check-none{
+    grid-area: check-none;
+}
+
+#check-form{
+    grid-area: check-form;
+}
+*/
+footer{
+    background-color: hsl(208 100% 22%);
+    color: #ccc;
+    position: static;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    margin: 0px;
+}
+
+#copy{
+    padding: 5px;
+    text-align: center;
+}

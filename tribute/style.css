@@ -1,0 +1,88 @@
+body{
+    background-color: #333;
+    color: #ccc;
+    background: linear-gradient(45deg, #333, #555) no-repeat right top fixed;
+    font-family: 'Lucida Console' monospace;
+}
+
+header{
+    background-color: hsl(208 100% 22%);
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+}
+
+#page-name{
+    left: 20px;
+    padding: 5px;
+    cursor: default;
+}
+
+#nav{
+    position: fixed;
+    top:5px;
+    right: 20px;
+}
+
+#nav a{
+    color:#ccc;
+    padding: 5px;
+    text-decoration: none
+}
+
+#nav a:hover{
+    color: #333;
+}
+
+
+#main{
+    margin: 50px;
+    text-align: center;
+}
+
+#img-div{
+    margin: 15px;
+}
+
+#image{
+    display: block;
+    align-self: center;
+    max-width: 25%;
+    max-height: auto;
+    margin: auto;
+    padding: 5px;
+}
+
+#img-caption{
+    margin: 5px;
+}
+
+#tribute-info{
+    width: 50%;
+    padding: 20px 100px;
+    margin: auto;
+}
+
+#tribute-link{
+    color: hsl(208 100% 33%);
+}
+
+#tribute-link:hover{
+    color: hsl(208 100% 55%);
+}
+
+footer{
+    background-color: hsl(208 100% 22%);
+    color: #ccc;
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    margin: 0px;
+}
+
+#copy{
+    padding: 5px;
+    text-align: center;
+}

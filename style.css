@@ -1,0 +1,145 @@
+body{
+  background-color: #333;
+  color: #ccc;
+  background: linear-gradient(45deg, #333, #555) no-repeat right top fixed;
+  font-family: 'Lucida Console' monospace;
+}
+
+header{
+  background: linear-gradient(140deg, hsl(208 100% 22%), hsl(208 100% 11%)) no-repeat left top fixed;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+}
+
+#page-name{
+  left: 20px;
+  padding: 5px;
+  cursor: default;
+}
+
+#navbar{
+  position: fixed;
+  top:5px;
+  right: 20px;
+}
+
+#navbar a{
+  color:#ccc;
+  padding: 5px;
+  text-decoration: none
+}
+
+#navbar a:hover{
+  color: #fff;
+}
+
+
+#main{
+  margin: 50px;
+  text-align: center;
+}
+
+a{
+  color: hsl(208 100% 55%);
+}
+
+#welcome-section{
+  background: linear-gradient(140deg, hsl(208 100% 22%), hsl(208 100% 11%)) no-repeat left top fixed;
+  height: 100vh;
+  width: 90vw;
+  display: grid;
+  grid-template: 200px 50px auto/repeat(2, auto);
+  grid-template-areas: 
+  "title img"
+  "sub img"
+  "sum img";
+  border: solid 1px #777;
+}
+
+#title{
+  justify-self: center;
+  align-self: center;
+  font-size: 60px;
+  grid-area: "title";
+}
+
+#subtitle{
+  justify-self: center;
+  align-self: center;
+  font-size: 35px;
+  grid-area: "sub";
+}
+
+#summary{
+  justify-self: center;
+  align-self: center;
+  font-size: 24px;
+  grid-area: "sum";
+}
+
+#pfp{align-self: center;
+  justify-self: center;
+  grid-area: img;
+}
+
+#projects{
+  margin-top: 2em;
+  display: grid;
+  grid-template: repeat(2, 1fr)/repeat(2, 1fr);
+  grid-template-areas: 
+    "trib surv"
+    "plp tdp";
+  grid-gap: 2em 5em;
+}
+
+.project-tile{
+  background: linear-gradient(140deg, hsl(208 100% 22%), hsl(208 100% 11%)) no-repeat left top fixed;
+  border: solid #777 1px;
+  width: fit-content;
+  height: 200px;
+}
+
+.project-name a{
+  color: #777;
+}
+
+#trib{
+  grid-area: "trib";
+}
+
+#surv{
+  grid-area: "surv";
+}
+
+#plp{
+  grid-area: "plp";
+}
+
+#tdp{
+  grid-area: "tdp";
+}
+
+.socials{
+  text-align: center;
+  margin: 20px;
+}
+
+.socials a{
+  color: hsl(208 100% 44%);
+}
+
+footer{
+  background: linear-gradient(140deg, hsl(208 100% 22%), hsl(208 100% 11%)) no-repeat left top fixed;
+  color: #ccc;
+  position: static;
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
+}
+
+#copy{
+  padding: 5px;
+  text-align: center;
+}

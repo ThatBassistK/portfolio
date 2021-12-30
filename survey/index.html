@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html Lang="en">
+    <head>
+        <title>Web Design Survey</title>
+        <meta charset="UTF-8">
+        <meta name="author" content="Kendall B. Ballentine">
+        <meta name="keywords" content="coding, html, css, web design, survey project, FreeCodingCamp.org responsive web design survey form project">
+        <link rel="stylesheet" href="style.css" type="text/css">
+
+    </head>
+    <body>
+        <header>
+            <div id="page-name">Survey Form Page</div>
+            <nav id="nav">
+                <a href="../../">Home</a>
+                <a href="../tribute/index.html">Tribute Page</a>
+                <a href="#">Survey Form</a>
+            </nav>
+        </header>
+        <!----------Main Content---------->
+        <main id="main">
+            <h1 id="title">How's my form?</h1>
+            <p id="description">This survey is to evaluate my web design capabilities, please give honest feedback only. Thank you!</p>
+            <!----------Survey Form---------->
+            <form id="survey-form" action="survey.php" method="POST">
+                <!----------Name Input Field---------->
+                <label for="name" id="name-label">Name</label><br>
+                <input type="text" id="name" placeholder="Name" required><br>
+                <!----------Email Input Field---------->
+                <label for="email" id="email-label">Email</label><br>
+                <input type="email" id="email" placeholder="Email" required><br>
+                <!--Overall Rating Field-->
+                <Label for="number" id="number-label">Rate my overall design skills from 1-10</Label><br>
+                <input type="number" min="1" max="10" id="number" placeholder="1-10" required><br>
+                <!--Impression Dropdown-->
+                <label for="dropdown" id="dropdown-label">How would you describe the impression you get from this page</label><br>
+                <select name="impression" id="dropdown">
+                    <option value="pro" id="op-pro">Professional</option>
+                    <option value="good" id="op-good">Good</option>
+                    <option value="decent" id="op-decent">Decent</option>
+                    <option value="ok" id="op-ok">OK</option>
+                    <option value="silly" id="op-silly">Silly</option>
+                    <option value="poor" id="op-poor">Unimpressive</option>
+                    <option value="bad" id="op-bad">Terrible</option>
+                </select><br>
+                <!--Radio-->
+                <div id="rad">
+                    <p id="rad-label">Are you proud of me, Dad?</p>
+                    <div class="box" id="y-box">
+                        <label for="rad-y" id="y-label">Yes</label>
+                        <input type="radio" name="radio" value="yes" id="rad-y">
+                    </div>
+                    <div class="box" id="w-box">    
+                        <label for="rad-w" id="w-label">I'm not your dad</label>
+                        <input type="radio" name="radio" value="not dad" id="rad-w">
+                    </div>
+                    <div class="box" id="n-box">
+                        <label for="rad-n" id="n-label">No</label>
+                        <input type="radio" name="radio" value="no" id="rad-n">
+                    </div>
+                </div><br>
+                <!--Checkbox-->
+                <div id="check">
+                    <p id="check-label">What did you like about this survey?</p>
+                    <div class="box" id="all-box">
+                        <label for="check-all" id="all-label">Everything</label>
+                        <input type="checkbox" name="check" value="Everything"id="check-all">
+                    </div>
+                    <div class="box" id="none-box">
+                        <label for="check-none" id="none-label">None</label>
+                        <input type="checkbox" name="check" value="Nothing" id="check-none">
+                    </div>
+                    <div class="box" id="form-box">
+                        <label for="check-form" id="form-label">The form</label>
+                        <input type="checkbox" name="check" value="Form" id="check-form">
+                    </div>    
+                </div><br>
+                <!--Additional Comments Section-->
+                <label for="comments" id="comments-label" style="text-align: center;">Anything else you'd like to tell me?</label><br>
+                <textarea id="comments" style="height: 150px;"></textarea><br>
+                <!--Submit Button-->
+                <button type="submit" id="submit">Submit</button>
+            </form>
+        </main>
+        <footer>
+            <div id="copy">Copywrite &copy; 2021 Kendall B. Ballentine</div>
+        </footer>
+        <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    </body>
+</html>
