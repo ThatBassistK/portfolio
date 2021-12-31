@@ -6,7 +6,7 @@ body{
 }
 
 header{
-    background-color: hsl(208 100% 22%);
+    background: linear-gradient(140deg, hsl(208 100% 22%), hsl(208 100% 11%)) no-repeat left top fixed;
     position: fixed;
     top: 0px;
     left: 0px;
@@ -32,17 +32,32 @@ header{
 }
 
 #nav a:hover{
-    color: #333;
+    color: #fff;
 }
 
 
 #main{
-    margin: 50px;
+    display: grid;
+    grid-template: 10vh 70vh/repeat(2, 1fr)
+        'title title'
+        'img-div info';
+    justify-content: center;
+    align-content: center;
     text-align: center;
+    margin: 50px;
+}
+
+#title{
+    grid-area: title;
+    margin: auto;
 }
 
 #img-div{
-    margin: 15px;
+    margin: auto;
+    background: linear-gradient(140deg, hsl(208 100% 22%), hsl(208 100% 11%)) no-repeat left top fixed;
+    border: solid 1px #777;
+    grid-area: img-div;
+    
 }
 
 #image{
@@ -50,18 +65,20 @@ header{
     align-self: center;
     max-width: 25%;
     max-height: auto;
-    margin: auto;
     padding: 5px;
 }
 
 #img-caption{
     margin: 5px;
+    grid-area: cap;
 }
 
 #tribute-info{
-    width: 50%;
     padding: 20px 100px;
     margin: auto;
+    background: linear-gradient(140deg, hsl(208 100% 22%), hsl(208 100% 11%)) no-repeat left top fixed;
+    border: solid 1px #777;
+    grid-area: info;
 }
 
 #tribute-link{
@@ -72,8 +89,17 @@ header{
     color: hsl(208 100% 55%);
 }
 
+.socials{
+    text-align: center;
+    margin: 20px;
+}
+  
+.socials a{
+    color: hsl(208 100% 44%);
+}
+
 footer{
-    background-color: hsl(208 100% 22%);
+    background: linear-gradient(140deg, hsl(208 100% 22%), hsl(208 100% 11%)) no-repeat left top fixed;
     color: #ccc;
     position: fixed;
     bottom: 0px;

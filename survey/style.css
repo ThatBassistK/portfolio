@@ -6,7 +6,7 @@ body{
 }
 
 header{
-    background-color: hsl(208 100% 22%);
+    background: linear-gradient(140deg, hsl(208 100% 22%), hsl(208 100% 11%)) no-repeat left top fixed;
     position: fixed;
     top: 0px;
     left: 0px;
@@ -32,16 +32,18 @@ header{
 }
 
 #nav a:hover{
-    color: #333;
+    color: #fff;
 
 }
 
 #main{
+    background: linear-gradient(140deg, hsl(208 100% 22%), hsl(208 100% 11%)) no-repeat left top fixed;
     margin: 50px;
     text-align: center;
+    border: solid 1px #777;
 }
 
-input, select, textarea{
+input, select, textarea, button{
     margin-top: 5px;
     margin-bottom: 20px;
 }
@@ -49,7 +51,7 @@ input, select, textarea{
 
 
 .box{
-    border: double 1px #777;
+    border: solid 1px #777;
     display: inline;
     margin: 5px;
     padding: 5px;
@@ -132,8 +134,18 @@ input, select, textarea{
     grid-area: check-form;
 }
 */
+
+.socials{
+    text-align: center;
+    margin: 20px;
+  }
+  
+.socials a{
+    color: hsl(208 100% 44%);
+}
+
 footer{
-    background-color: hsl(208 100% 22%);
+    background: linear-gradient(140deg, hsl(208 100% 22%), hsl(208 100% 11%)) no-repeat left top fixed;
     color: #ccc;
     position: static;
     bottom: 0px;
