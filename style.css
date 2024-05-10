@@ -3,7 +3,38 @@ body{
     color: #777
 }
 
-h1{
+#main-content{
+    display: grid;
+    grid-template:
+        '. .  term term';
+    align-items: center;
+    align-content: center;
+}
+
+#term{
+    display: block;
+    grid-area: term;
+    font-family: 'Lucida Console', 'Consolas', monospace;
+    padding: 50px 25px ;
     margin-top: 100px;
+    height: 300px;
+    width: 400px;
+    background-color: #111;
+    color: #575;
+}
+
+#banner{
     text-align: center;
+    font-weight: bold;
+    font-size: xx-large;
+    text-decoration: underline;
+}
+
+#prompt{
+    font-style: italic;
+}
+
+#desc{
+    font-size: small;
+    text-wrap: none;
 }
